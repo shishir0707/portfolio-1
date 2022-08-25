@@ -1,0 +1,7 @@
+@media screen and (max-width: 875px) {
+    #about .main-about .about-cmn {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+}

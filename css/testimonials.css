@@ -1,0 +1,121 @@
+.testimonial-left,
+.testimonial-right {
+    position: relative;
+}
+
+.testimonial-left img,
+.testimonial-right img {
+    position: absolute;
+    padding: 5px;
+    border: 1px solid var(--secondary);
+    border-radius: 70px;
+}
+
+.testimonial-left img:nth-child(1),
+.testimonial-right img:nth-child(3) {
+    width: 70px;
+    height: 70px;
+    /* top: 40%; */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.testimonial-left img:nth-child(2),
+.testimonial-right img:nth-child(2) {
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    z-index: 2;
+    /* left: 10%; */
+    /* transform: translateY(-50%); */
+}
+
+.testimonial-left img:nth-child(3),
+.testimonial-right img:nth-child(1) {
+    width: 70px;
+    height: 70px;
+    /* bottom: 10%; */
+    right: 0%;
+    z-index: 2;
+}
+
+.testimonial-carousel .owl-item img {
+    width: 120px;
+    height: 120px;
+}
+
+.testimonial-carousel .testimonial-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid var(--secondary);
+    border-radius: 60px;
+}
+
+.testimonial-carousel .owl-dots {
+    height: 40px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 2px solid var(--secondary);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    left: 5px;
+    border-radius: 16px;
+    background: var(--secondary);
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active::after {
+    background: var(--primary);
+}
+
+.carousel-inner {
+    margin-bottom: 100px;
+    padding: 80px;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    border-radius: 50%;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
